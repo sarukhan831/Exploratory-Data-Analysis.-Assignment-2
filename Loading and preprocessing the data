@@ -1,0 +1,4 @@
+## Download file and unzip the archive to the current working directory ##
+fileurl<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
+download.file(fileurl,destfile=paste0(getwd(),"/NEI_data.zip"),method = "curl")
+unzip("NEI_data.zip",exdir="./")
